@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The NHANES Portal shinyApp</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The NHANES Portal shinyApp">
+  <meta name="author" content="Christopher J Endres">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The NHANES Portal shinyApp</h1>
+    <h2>Retrieving National Health And Nutrition Examination Survey Demographics</h2>
+    <p>Christopher J Endres<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>A shinyApp Portal to the NHANES database</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>The National Health And Nutrition Examination Survey (NHANES)</h3>
+
+<ul>
+<li>The purpose of the NHANES project is to assess health and nutritional status in the US.</li>
+<li>This unique project combines interviews and physical examinations.</li>
+<li>Data are available to the public and are often used for research.</li>
+<li>Data have been updated continuously since 1999.</li>
+<li>More information is available at the NHANES website <a href="http://www.cdc.gov/nchs/nhanes.htm">http://www.cdc.gov/nchs/nhanes.htm</a></li>
+</ul>
+
+<h3>Functionality of the NHANES shinyApp</h3>
+
+<ul>
+<li>Provides easy access and retrieval of basic NHANES data fields.</li>
+<li>Specifically, it displays a summary of gender, age, ethnicity, and marital status.</li>
+<li>Data are available from 2001-2012, and are reported in 2-year intervals.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Retrieving key NHANES demographics</h2>
+  </hgroup>
+  <article data-timings="">
+    <h6>1: Select desired year</h6>
+
+<h6>2: Click on &#39;Show columns&#39;</h6>
+
+<h6>3: Select desired column</h6>
+
+<h6>4: Click &#39;Retrieve demographic data&#39;</h6>
+
+<h6>5: For clarity, select &#39;Translate code&#39;</h6>
+
+<h6>6: Finally, click &#39;Generate Summary&#39;</h6>
+
+<h3>In step 3 the user selects the key demographic to display</h3>
+
+<ul>
+<li>Gender</li>
+<li>Age</li>
+<li>Ethnicity</li>
+<li>Marital Status</li>
+</ul>
+
+<p>Link to the app <a href="https://cjendres1.shinyapps.io/BrowseNHANESdemographics/">https://cjendres1.shinyapps.io/BrowseNHANESdemographics/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Sample information that is reported</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>[1] &quot;By default, the NHANES Portal shinyApp reports raw values&quot;</p>
+
+<p>[1] &quot;For example, for the gender demographic for 2007-2008 the first 10 values are:&quot;</p>
+
+<p>Gender 
+ [1] 2 2 1 2 1 1 1 1 1 1</p>
+
+<p>[1] &quot;The code (1=Male,2=Female) can be translated at a click of a button to produce :&quot;</p>
+
+<p>[1] Female Female Male   Female Male   Male   Male   Male   Male   Male<br>
+Levels: Male Female</p>
+
+<p>[1] &quot;The total for each category can be summarized at the click of a button&quot;</p>
+
+<table><thead>
+<tr>
+<th align="center">Gender</th>
+<th align="center">Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center">Male</td>
+<td align="center">5096</td>
+</tr>
+<tr>
+<td align="center">Female</td>
+<td align="center">5053</td>
+</tr>
+</tbody></table>
+
+<h3>Test out the app on the next page!</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="shineserve" style="background:;">
+  <article data-timings="">
+    <iframe src = 'https://cjendres1.shinyapps.io/BrowseNHANESdemographics/' height = '600px'></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='A shinyApp Portal to the NHANES database'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Retrieving key NHANES demographics'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Sample information that is reported'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title=''>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
+
+  <script src="shared/shiny.js" type="text/javascript"></script>
+  <script src="shared/slider/js/jquery.slider.min.js"></script>
+  <script src="shared/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
